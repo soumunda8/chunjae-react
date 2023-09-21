@@ -1,0 +1,11 @@
+/* scss 기본 문법 */
+
+$color : #f00;
+$color2 : pink;
+
+a {
+    color:$color;
+    text-decoration:none;
+    &:hover {color:$color2;}
+    &:active {color:skyblue;}
+}

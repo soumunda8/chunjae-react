@@ -7,7 +7,9 @@ import './index.css';
 //import Test03 from './Test03';
 //import Test04 from './Test04';
 //import Test05 from './Test05';
-import Test06 from './Test06';
+//import Test06 from './Test06';
+//import Test07 from './Test07';
+import Test08 from './Test08';
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
 // bootstrap 설치
@@ -17,7 +19,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Test06 />
+    <Test08 />
   </React.StrictMode>
 );
 
