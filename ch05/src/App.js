@@ -1,5 +1,7 @@
 import './App.css';
 import React, {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -18,9 +20,11 @@ const App = () => {
                     <Route index element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/profile/:username" element={<Profile />} />
-                    <Route path="/articles" element={<Articles />}>
+                    {/*<Route path="/articles" element={<Articles />}>
                         <Route path=':id' element={<Article />} />
-                    </Route>
+                    </Route>*/}
+                    <Route path="/articles" element={<Articles />} />
+                    <Route path='/articles/:id' element={<Article />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/mypage" element={<MyPage />} />
                     <Route path="*" element={<NotFound />} />

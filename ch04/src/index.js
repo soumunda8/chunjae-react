@@ -6,13 +6,14 @@ import './index.css';
 //import Test02 from './Test02';
 //import Test03 from './Test03';
 //import Test04 from './Test04';
-import Test05 from './Test05';
+//import Test05 from './Test05';
+import Test06 from './Test06';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Test05 />
+    <Test06 />
   </React.StrictMode>
 );
 

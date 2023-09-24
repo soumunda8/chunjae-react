@@ -1,4 +1,6 @@
 import {useParams} from 'react-router-dom';
+import changgun from '../changgun.webp'
+import "./Profile.scss";
 
 const data = {
     hyeonwoo : {
@@ -29,7 +31,7 @@ const data = {
     im : {
         nm : '임창균',
         desciption : '최애',
-        imgSrc : 'https://i.namu.wiki/i/gRCPGOlDSyQj1utE4acEvixsSDadzGinFiheFXQdCt_JwRXX0Vc24RqvNJTXmJ9LbF4lB_crvsuvl-Ba3CWBAJf1u-hPdQDgbS0eJh6-xe8vCy6oqc7Pj6Xos2Ahd2G9F29n9K9IlkQa2ZjVZsLTzQ.webp',
+        imgSrc : changgun,
     },
 }
 const Profile = () => {
@@ -40,7 +42,7 @@ const Profile = () => {
             <h2>Profile</h2>
             <hr />
             {profile ? (
-                <div>
+                <div className='Profile text-center'>
                     <h3>{profile.nm}</h3>
                     <p>{profile.desciption}</p>
                     <img src={profile.imgSrc} alt={profile.nm} />

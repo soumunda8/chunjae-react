@@ -11,18 +11,26 @@ const Layout = () => {
     };
     return (
         <div>
-            <header style={{background:'#ececec', padding:20, fontSize:24}}>
-                <button onClick={goBack}>뒤로가기</button>
-                <button onClick={goHome}>홈으로</button>
-                <ul style={{float:'right'}}>
-                    <li><Link to='/articles'>게시판</Link></li>
-                    <li><Link to='/login'>로그인</Link></li>
-                    <li><Link to='/mypage'>마이페이지</Link></li>
-                </ul>
+            <header>
+                <nav className="py-2 bg-body-tertiary border-bottom">
+                    <div className="container d-flex flex-wrap">
+                    <ul className="nav me-auto">
+                        <li className="nav-item"><button className='nav-link px-2' onClick={goHome}>Home</button></li>
+                        <li className="nav-item"><button className='nav-link px-2' onClick={goBack}>뒤로가기</button></li>
+                    </ul>
+                    <ul className="nav">
+                        <li className="nav-item"><Link className='nav-link px-2' to='/articles'>게시판</Link></li>
+                        <li className="nav-item"><Link className='nav-link px-2' to='/login'>로그인</Link></li>
+                        <li className="nav-item"><Link className='nav-link px-2' to='/mypage'>마이페이지</Link></li>
+                    </ul>
+                    </div>
+                </nav>
             </header>
-            <main>
-                <Outlet />
-            </main>
+            <div className='container my-5'>
+                <main>
+                    <Outlet />
+                </main>
+            </div>
         </div>
     )
 }
